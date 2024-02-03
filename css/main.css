@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+
+/* ****************************** *
+ * main
+ * ****************************** */
+.main-container {
+  width: 100%; height: 100vh;
+  position: relative;
+  background-color: #fff;
+  background-image: linear-gradient(0deg, #fff 8%, transparent),
+  linear-gradient(90deg, #000 0px, #000 1px, transparent 1px, transparent 99px,  transparent 100px),
+  linear-gradient(#000 0px, #000 1px, transparent 1px, transparent 99px,  transparent 100px);
+  background-size: 100% 100%, 80px 100%, 100% 50px;
+}
+.main-visual {
+  max-width: 1440px;
+  width: 100%; height: 33.854vw;
+  position: absolute; top: 10.4vw; left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #b8ff65;
+  border: 1px solid #000; box-sizing: border-box;
+}
+.main-visual .main-visual-title {
+  width: 852px; height: 233px;
+  position: absolute; top: 150px; left: 113px;
+}
+.main-visual .main-visual-title > img {width: 100%; height: auto;}    
+
+.main-visual .main-bot-txts {
+  display: flex; justify-content: space-between; align-items: center;
+  width: 100%; height: 50px;
+  padding: 0 50px; box-sizing: border-box;
+  position: absolute; bottom: 50px; left: 0;
+  border-top: 1px solid #000; border-bottom: 1px solid #000;
+}
+.main-visual .main-bot-txts .alret {font-size: 14px;}
+.main-visual .main-bot-txts b {font-family: 'Montserrat', sans-serif; font-weight: 600;}
+
+.main-visual .view-btn {
+  width: 220px; height: 220px;
+  position: absolute; top: 280px; right: 40px;
+}
+.main-visual .view-btn a {
+  display: flex; justify-content: center; align-items: center;
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  background: #000; color: #fff; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: center; line-height: 1.4;
+  transition: all .4s;
+}
+.main-visual .view-btn a:hover {background: #fff; color: #000;}
