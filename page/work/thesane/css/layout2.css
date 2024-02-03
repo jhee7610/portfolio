@@ -1,0 +1,101 @@
+/****** company ******/
+.company {}
+.company .section {width: 100%; height: 100vh;}
+.company .section.cpy_sc1 {background: url(../images/company/cpy_sc1.png) no-repeat center/cover;}
+.company .section.cpy_sc2 {background: url(../images/company/cpy_sc2.png) no-repeat center/cover;}
+.company .section.cpy_sc3 {background: url(../images/company/cpy_sc3.png) no-repeat 70% center/cover;}
+
+
+.company .content {max-width: 1280px; height: 100%; margin: 0 auto; position: relative;}
+.company .content .cpy_txt {position: absolute; top: calc(50% - 260px); left: 0;}
+.company .content .cpy_txt h6 {margin-bottom: 8px; color: #ffd900; font-size: 18px; font-weight: 500;}
+.company .content .cpy_txt h5 {margin-bottom: 18px; color: #fff; font-family: 'Noto Serif KR', serif; font-size: 54px; font-weight: 300; letter-spacing: -3.5px; line-height: 1.2; word-break: keep-all;}
+.company .cpy_sc3 .content .cpy_txt h5 .pbr {display: block;}
+.company .content .cpy_txt p {margin-bottom: 20px; color: #fff; font-size: 22px; font-weight: 300; line-height: 1.6; word-break: keep-all;}
+.company .content .cpy_txt p .pbr {display: block;}
+
+.company .content .cpy_txt .down_btn {width: 42px; height: 42px; position: relative; border: 2px solid #fff; box-sizing: border-box; border-radius: 50%; color: #fff; cursor: pointer; opacity: 0.5; transition: opacity .3s;}
+.company .content .cpy_txt .down_btn:hover {opacity: 1;}
+.company .content .cpy_txt .down_btn::before {display: inline-block; content: ''; width: 14px; height: 14px; position: absolute; top: 50%; left: 50%;  border-bottom: 2px solid #fff; border-right: 2px solid #fff; box-sizing: border-box; transform: rotate(45deg) translate(-72%);}
+
+
+.brief_btn {position: fixed; top: 16%; right: 3.5%; }
+.brief_btn a {display: block; width: 116px; height: 116px; padding: 13% 0; box-sizing: border-box;  background: #ffd900; border-radius: 50%; color: #403600; font-size: 14px; text-align: center; cursor: pointer;}
+.brief_btn i {margin-top: 6px; font-size: 20px;}
+
+
+
+@media all and (max-width: 1380px){
+    .company .content {max-width: 80%;}
+
+    .company .content .cpy_txt {top: calc(50% - 290px);}
+    .company .content .cpy_txt h5 {font-size: 48px;}
+    .company .content .cpy_txt p {font-size: 20px;}
+}
+
+
+@media all and (max-width: 1024px){
+    .company .content {max-width: 90%;}
+
+    .brief_btn {display: none;}
+}
+
+
+
+@media all and (max-width: 768px){
+    .company .content .cpy_txt h5 {margin-bottom: 12px; font-size: 38px;}
+    .company .content .cpy_txt p {font-size: 18px;}
+}
+
+@media all and (max-width: 640px){
+    .company .content .cpy_txt {top: calc(50% - 220px);}
+    
+    .company .content .cpy_txt h6 {font-size: 14px;}
+    .company .content .cpy_txt h5 {margin-bottom: 12px; font-size: 30px;}
+    .company .content .cpy_txt h5 .pbr {display: block;}
+    .company .content .cpy_txt p {width: 98%; font-size: 18px;}
+    .company .content .cpy_txt p .pbr {display: inline;}
+
+    .company .content .cpy_txt .down_btn {width: 32px; height: 32px;}
+    .company .content .cpy_txt .down_btn::before {width: 10px; height: 10px;}
+}
+
+
+
+
+/****** service ******/
+.service {margin-top: 204px;}
+.wd_align {max-width: 1280px; margin: 0 auto;}
+
+.service h2 {font-size: 36px; font-weight: 600;}
+
+.service nav {margin: 75px auto 90px;}
+.service nav ul {}
+.service nav ul>li {display: inline-block;}
+.service nav ul>li>a {display: inline-block; padding: 10px 25px; font-size: 
+18px; letter-spacing: -.6px;}
+.service nav ul>li>a:hover, .service nav ul>li>a.active {border-radius: 23px; background: rgba(255,217,0,.5);}
+
+.service .svc_cont {width: 100%;}
+
+.service .svc_cont .svc_img {width: 100%; height: 420px; background-repeat: no-repeat; background-size: cover;}
+.service .svc_cont.printmedia .svc_img {background-image: url(../images/service/printmedia.png);}
+
+
+.service .svc_cont .svc_info_wrap {margin: -50px 0 228px 0; padding: 0 3%; box-sizing: border-box;}
+.service .svc_cont .svc_info_wrap>*{letter-spacing: -1.5px;}
+.service .svc_cont .svc_info_wrap h3 {font-size: 60px; font-weight: 500;}
+.service .svc_cont .svc_info_wrap .svc_info {width: 100%; margin-top: 40px; overflow: hidden;}
+.service .svc_cont .svc_info_wrap .svc_info ul {float: left;}
+.service .svc_cont .svc_info_wrap .svc_info ul>li {padding: 3px 0; color: #444; font-size: 22px;}
+.service .svc_cont .svc_info_wrap .svc_info p {width: 60%; float: right; margin-top: 40px; color: #555; font-size: 20px; font-weight: 300; line-height: 1.5; word-break: keep-all;}
+.service .svc_cont .svc_info_wrap .svc_info p>.pbr {display: block;}
+
+.service .svc_pf_cont {width: 100%; padding-bottom: 228px; background: #ffd900;}
+.service .svc_pf_cont .wd_align {padding: 0 3%; box-sizing: border-box; position: relative; top: -40px;}
+.service .svc_pf_cont h3{font-size: 60px; font-weight: 600; letter-spacing: -1.5px;}
+.service .svc_pf_cont .latest_works {width: 100%; margin: 96px 0 60px; height: 452px; background: #eee;}
+
+.more_btn {width: 156px; height: 42px; margin: 0 auto;}
+.more_btn a {display: block; width: 100%; height:100%; border: 2px solid #222; text-align: center; line-height: 42px; transition: 0.5s;}
+.more_btn a:hover {border-color: #222; box-shadow: inset 14em 0 0 0 #222d; color: #fff;}
