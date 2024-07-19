@@ -93,96 +93,72 @@
   </head>
   <body>
     <div class="wrap">
-      <header id="header">
-        <div class="header-inner">
-          <h1 id="logo">
-            <a href="/portfolio/index.html">LOGO</a>
-          </h1>
-          <!-- #logo -->
-          <nav class="menu-container">
-            <ul id="menu" class="menu">
-              <li class="menu-1dep">
-                <a href="/portfolio/page/about.html"><span>ABOUT ME</span></a>
-              </li>
-              <li class="menu-1dep">
-                <a href="/portfolio/page/work.html"><span>WORK</span></a>
-              </li>
-              <li class="menu-1dep">
-                <a href="/portfolio/page/artwork.html"><span>ARTWORK</span></a>
-              </li>
-              <li class="menu-1dep">
-                <a href="/portfolio/page/contact.html"><span>CONTACT</span></a>
-              </li>
-            </ul>
-          </nav>
-          <!-- .menu-container -->
+      <div id="header"></div>
+      <main id="container" class="on-bg">
+        <div class="cnavi">
+          <div class="cinner">
+            <h3 class="page-title">ABOUT ME</h3>
+          </div>          
         </div>
-        <!-- .header-inner -->
-      </header>
-      <section id="container" class="about">
-        <div class="page-title"><h2>ABOUT ME</h2></div>
-        <div class="wrap-align">
-          <div class="box-wrap">
-            <ul class="box">
-              <li class="box-profile">
-                <p class="box-title">PROFILE</p>
-                <div class="box-content">
+        
+        <div class="page-contents">
+          <div class="cinner">
+            <section class="profile">
+              <div class="in-profile">
+                <h4 class="in-title">PROFILE</h4>
+                <div class="in-cont">
                   <div class="profile-pic">
-                    <img src="../img/page/profile-pic.png" />
+                    <img src="../img/page/profile-pic.png" alt="프로필 사진" />
                   </div>
-                  <!-- profile-pic-->
-                  <ul class="profile-ul">
+                  <ul>
                     <li><span>NAME</span>정희정(JUNG HEEJUNG)</li>
-                    <li><span>BIRTH</span>1994.06.17</li>
+                    <li><span>BIRTH</span>1994.06</li>
                     <li><span>MAIL</span>jhee7610@gmail.com</li>
                   </ul>
                 </div>
-                <!-- .box-content -->
-              </li>
-              <li class="box-skill">
-                <p class="box-title">SKILL</p>
-                <ul>
-                  <li class="skill-photoshop">
-                    <span class="skill-cate">Photoshop</span>
-                    <span class="skill-bar"></span>
-                    <p class="skill-txt">
-                      기본 툴을 이용한 이미지 편집, 보정, UI/UX를 고려한
-                      디자인이 가능합니다.
-                    </p>
-                  </li>
-                  <!-- .skill-photoshop -->
-                  <li class="skill-illust">
-                    <span class="skill-cate">Illustrator</span>
-                    <span class="skill-bar"></span>
-                    <p class="skill-txt">
-                      아이콘 제작 등 벡터 소스 제작, 편집, UI/UX를 고려한
-                      디자인이 가능합니다.
-                    </p>
-                  </li>
-                  <!-- .skill-illust -->
-                  <li class="skill-html">
-                    <span class="skill-cate">Html / Css</span>
-                    <span class="skill-bar"></span>
-                    <p class="skill-txt">
-                      웹표준, 웹접근성에 맞는 마크업 구현, 반응형, 모바일
-                      웹페이지 제작 가능합니다.
-                    </p>
-                  </li>
-                  <!-- .skill-html -->
-                  <li class="skill-jquery">
-                    <span class="skill-cate">jQuery</span>
-                    <span class="skill-bar"></span>
-                    <p class="skill-txt">
-                      jQuery 플러그인 사용 및 구현 가능합니다.
-                    </p>
-                  </li>
-                  <!-- .skill-jquery -->
-                </ul>
-              </li>
-              <li class="box-education">
-                <p class="box-title">EDUCATION</p>
-                <div class="box-content">
-                  <ul class="education-ul">
+              </div>
+              <div class="in-skill">
+                <h4 class="in-title">SKILL</h4>
+                <div class="in-cont">
+                  <ul>
+                    <li class="photoshop">
+                      <span class="cate">Photoshop</span>
+                      <span class="bar"></span>
+                      <p>
+                        기본 툴을 이용한 이미지 편집, 보정, UI/UX를 고려한
+                        디자인이 가능합니다.
+                      </p>
+                    </li>
+                    <li class="illust">
+                      <span class="cate">Illustrator</span>
+                      <span class="bar"></span>
+                      <p>
+                        아이콘 제작 등 벡터 소스 제작, 편집, UI/UX를 고려한
+                        디자인이 가능합니다.
+                      </p>
+                    </li>
+                    <li class="html">
+                      <span class="cate">Html / Css</span>
+                      <span class="bar"></span>
+                      <p>
+                        웹표준, 웹접근성에 맞는 마크업 구현, 반응형, 모바일
+                        웹페이지 제작 가능합니다.
+                      </p>
+                    </li>
+                    <li class="jquery">
+                      <span class="cate">jQuery</span>
+                      <span class="bar"></span>
+                      <p>
+                        jQuery 플러그인 사용 및 구현 가능합니다.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="in-education">
+                <h4 class="in-title">EDUCATION</h4>
+                <div class="in-cont">
+                  <ul>
                     <li>
                       <span class="date">2020.02 - 2020.07</span>
                       <p>
@@ -198,14 +174,12 @@
                       <p>경성대학교 전자공학과 졸업</p>
                     </li>
                   </ul>
-                  <!-- .education-ul -->
                 </div>
-                <!-- .box-content -->
-              </li>
-              <li class="box-certificate">
-                <p class="box-title">CERTIFICATE</p>
-                <div class="box-content">
-                  <ul class="certificate-ul">
+              </div>
+              <div class="in-certificate">
+                <h4 class="in-title">CERTIFICATE</h4>
+                <div class="in-cont">
+                  <ul>
                     <li>
                       <span class="date">2022.06</span>
                       <p>운전면허 2종 보통</p>
@@ -223,14 +197,12 @@
                       <p>컴퓨터활용능력 1급</p>
                     </li>
                   </ul>
-                  <!-- .certificate-ul -->
                 </div>
-                <!-- .box-content -->
-              </li>
-              <li class="box-career">
-                <p class="box-title">CAREER</p>
-                <div class="box-content">
-                  <ul class="career-ul">
+              </div>
+              <div class="in-career">
+                <h4 class="in-title">CAREER</h4>
+                <div class="in-cont">
+                  <ul>
                     <li>
                       <span class="date">2023.04 - 2024.02</span>
                       <p><b> 제스아이앤씨 부산 지사</b> UI/UX팀 퍼블리셔</p>
@@ -245,17 +217,19 @@
                     </li>
                   </ul>
                 </div>
-                <!-- .box-content -->
-              </li>
-            </ul>
-            <!-- .box -->
+              </div>
+            </section>
           </div>
-          <!-- .box-wrap -->
         </div>
-        <!-- .wrap-align -->
-      </section>
-      <!-- #container .about -->
+      </main>
     </div>
-    <!-- .wrap -->
+    <script>
+      $(document).ready(function () {
+          $("#header").load("/page/header.html", function () {
+              document.getElementsByClassName("header-inner");
+          });         
+          
+      });
+    </script>
   </body>
 </html>

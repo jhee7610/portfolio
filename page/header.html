@@ -1,0 +1,64 @@
+<div class="header-inner">
+    <h1 class="header-logo">
+        <a href="/portfolio/index.html">
+            <p class="bold">2024</p>
+            <p class="bold">PORTFOLIO</p>
+            <p>(JHJ)</p>
+        </a>
+    </h1>
+    <div id="header-nav" class="header-nav">
+        <div class="nav">
+            <button type="button" class="nav-btn nav-btn-open">
+                <span class="blind">전체메뉴</span>
+            </button>
+            <nav id="main-nav">
+                <div class="main-nav-tit">
+                    <h2>2024 PORTFOLIO<span> (JHJ)</span></h2>
+                    <button type="button" class="nav-btn nav-btn-close">
+                        <span class="blind">전체메뉴 닫기</span>
+                    </button>
+                </div>
+                <div class="main-nav-depth1">
+                    <ul class="mn-ul1">
+                        <li class="mn-li1">
+                            <a href="/portfolio/page/about.html"><span>ABOUT ME</span></a>
+                        </li>
+                        <li class="mn-li1">
+                            <a href="/portfolio/page/work.html"><span>WORK</span></a>
+                        </li>
+                        <li class="mn-li1">
+                            <a href="/portfolio/page/artwork.html"><span>ARTWORK</span></a>
+                        </li>
+                        <li class="mn-li1">
+                            <a href="/portfolio/page/contact.html"><span>CONTACT</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-nav-bg"></div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        var mainNav = $("#main-nav");
+        $('.nav-btn-open').on("click", function(){
+            clearTimeout(mainNav.Timer);
+            mainNav.show();
+            mainNav.Timer = setTimeout(function() {
+				$("html").addClass("lock");
+				mainNav.addClass("is-open");
+			}, 100);
+        });
+        $('.nav-btn-close').on("click", function(){
+            clearTimeout(mainNav.Timer);
+			mainNav.removeClass("is-open");
+			mainNav.Timer = setTimeout(function() {
+				$("html").removeClass("lock");
+                $(".header-nav-bg").removeClass("show is-visible");
+				mainNav.hide();
+			}, 350);
+        });
+    });
+</script>
+  

@@ -1,0 +1,91 @@
+@charset "utf-8";
+html, body {
+    font-size: 18px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: -0.038rem;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+
+/* ****************************** *
+ * WRAP
+ * ****************************** */
+ .wrap {}
+
+
+/
+/* ****************************** *
+ * HEADER
+ * ****************************** */
+ #header {
+    width: 100%; height: 70px;
+    position: fixed; top: 0; left: 0; z-index: 999;
+    background: #fff;
+    border-bottom: 1px solid #000; box-sizing: border-box;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+/* LOGO */
+#logo {/* width: 101px; *//* height: 100%; */}
+#logo > a {
+    font-family: "Montserrat", sans-serif;
+    font-size: .889em;
+    line-height: 1.2;
+}
+#logo > a > p {}
+#logo > a > .bold {font-weight: 800;}
+
+/* MENU */
+.menu-container {
+    display: flex; justify-content: flex-end;
+    width: calc(100% - 101px);
+}
+.nav-btn {display: none;border: 0;background: none;}
+.menu-container #menu {display: flex;}
+.menu-container #menu .menu-1dep {padding: 0;}
+.menu-container #menu .menu-1dep > a {
+    display: block;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.222em;
+    font-weight: 600;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* padding: 0 40px; */
+    /* box-sizing: border-box; */
+    /* font-size: 18px; */
+    /* font-weight: 600; */
+    /* line-height: 70px; */
+}
+.menu-container #menu .menu-1dep > a > span {position: relative;}
+.menu-container #menu .menu-1dep > a > span::after {
+    display: block;
+    content: '';
+    width: 8px; height: 8px;
+    position: absolute; top: 0; right: -12px;
+    border-radius: 50%;
+    background-color: #b8ff65;
+    opacity: 0;
+    transition: opacity .3s;
+}
+.menu-container #menu .menu-1dep > a:hover > span::after {opacity: 1;}
+
+@media all and (max-width: 1440px) {
+    
+}
+
+@media all and (max-width: 1199px) {
+    
+}
+
+@media all and (max-width: 1024px) {
+    
+}
