@@ -1,0 +1,19 @@
+<div class="footer-cont">
+    <a href="#wrap" class="btn-top"><span class="blind">TOP</span></a>
+    <div class="cinner">
+        <p>
+            Copyright JUNG HEE JUNG 2024. All Rights Reserved.
+        </p>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function(){
+            var winHeight = document.documentElement.offsetHeight;
+            var scrollTop = document.scrollingElement.scrollTop;
+            scrollTop > winHeight * 0.2 ? $('.btn-top').addClass('over') : $('.btn-top').removeClass('over');
+        });
+
+    });
+</script>
+  

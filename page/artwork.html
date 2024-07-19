@@ -31,7 +31,7 @@
     <script src="../js/common.js"></script>
   </head>
   <body>
-    <div class="wrap">
+    <div id="wrap">
       <div id="header"></div>
       <main id="container" class="off-bg">
         <div class="cnavi">
@@ -94,17 +94,19 @@
           </div>
         </div>
       </main>
+      <footer id="footer"></footer>
     </div>
     <!-- .wrap -->
-
-
-    <script>
-      $(document).ready(function () {
-          $("#header").load("/portfolio/page/header.html", function () {
-              document.getElementsByClassName("header-inner");
-          });         
-          
-      });
-    </script>
+  </body>
+  <script>
+    $(document).ready(function () {
+        $("#header").load("/portfolio/page/header.html", function () {
+            document.getElementsByClassName("header-inner");
+        });         
+        $("#footer").load("/portfolio/page/footer.html", function () {
+              document.getElementsByClassName("footer-cont");
+          });
+    });
+  </script>
   </body>
 </html>

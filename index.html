@@ -16,9 +16,8 @@
     <script src="js/common.js"></script>
   </head>
   <body>
-    <div class="wrap">
+    <div id="wrap">
       <header id="header"></header>
-      
       <main id="container">
         <!-- <div class="cinner">
           <section class="main-visual">
@@ -35,11 +34,10 @@
           </section>
         </div> -->
       </main>
+      <footer id="footer"></footer>
     </div>
     <!-- .wrap -->
-
     <script>
-     
       $(document).ready(function () {
           $("#header").load("/portfolio/page/header.html", function () {
               document.getElementsByClassName("header-inner");
@@ -47,9 +45,10 @@
           $("#container").load("/portfolio/page/work.html", function () {
               document.getElementsByClassName("cnavi");
           });        
-          
+          $("#footer").load("/portfolio/page/footer.html", function () {
+              document.getElementsByClassName("footer-cont");
+          });
       });
-    </script>
-    
+    </script>    
   </body>
 </html>
