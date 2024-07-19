@@ -3,13 +3,13 @@
 /* ****************************** *
  * COMMON
  * ****************************** */
-#container.on-bg {
+/* #container.on-bg {
   background:
     linear-gradient(0deg, rgba(255, 255, 255, 0.95) 8%, rgba(255, 255, 255, 0.95) 100%),
     linear-gradient(90deg, #000 0px, #000 1px, transparent 1px, transparent 100%) 0 0 / 4% 100%,
     linear-gradient(#000 0px, #000 1px, transparent 1px, transparent 100%) 0 -1%/ 100% 4.6%;
 }
-#container.off-bg {background: #fff;}
+#container.off-bg {background: #fff;} */
 .cnavi {
   height: 100px;
   border-bottom: 1px solid #000;

@@ -256,9 +256,9 @@ body.lock  {overflow: hidden;}
     height: calc(100vh - 70px);
     margin-top: 70px;
     position: relative;
-    background: linear-gradient(0deg, #fff 20%, transparent) 0 0 / 100% 100%,
+    /* background: linear-gradient(0deg, #fff 20%, transparent) 0 0 / 100% 100%,
       linear-gradient(90deg, #000 0px, #000 1px, transparent 1px, transparent 100%) 0 0 / 4% 100%,
-      linear-gradient(#000 0px, #000 1px, transparent 1px, transparent 100%) 0 -1%/ 100% 4.6%;
+      linear-gradient(#000 0px, #000 1px, transparent 1px, transparent 100%) 0 -1%/ 100% 4.6%; */
   }
 .cinner {
     max-width: 1400px;

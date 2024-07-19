@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     	
-    <meta http-equiv="refresh" content="0; url=/portfolio/page/work.html" />
+    <!-- <meta http-equiv="refresh" content="0; url=/portfolio/page/work.html" /> -->
     <title>Portfolio</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="/img/common/favicon/favicon.ico" />
@@ -30,7 +30,7 @@
     <link href="css/reset.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/webfont.css">
     <link href="css/common.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+    <!-- <link href="css/main.css" rel="stylesheet" /> -->
     <!-- script -->
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/common.js"></script>
@@ -40,7 +40,7 @@
       <header id="header"></header>
       
       <main id="container">
-        <div class="cinner">
+        <!-- <div class="cinner">
           <section class="main-visual">
             <div class="main-visual-title">
               <h3>portfolio.</h3>
@@ -53,16 +53,20 @@
             </div>
             <a class="view-btn" href="/portfolio/page/work.html">View<span class="br">Works</span></a>
           </section>
-        </div>
+        </div> -->
       </main>
     </div>
     <!-- .wrap -->
 
     <script>
+     
       $(document).ready(function () {
           $("#header").load("/portfolio/page/header.html", function () {
               document.getElementsByClassName("header-inner");
-          });         
+          });
+          $("#container").load("/portfolio/page/work.html", function () {
+              document.getElementsByClassName("cnavi");
+          });        
           
       });
     </script>
