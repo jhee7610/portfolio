@@ -281,9 +281,20 @@
   box-sizing: border-box;
  }
  .work .sc-cont .desc-cont .title {
+  display: flex;
+  align-items: center;
   margin-bottom: 14px;
   font-weight: 600;
  }
+.work .sc-cont .desc-cont .title span {
+  margin: 0 4px;
+  padding: 0 5px;
+  border-radius: 4px;
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
  .work .sc-cont .desc-cont .txt {
    margin-bottom: 10px;
   font-size: .778em;
