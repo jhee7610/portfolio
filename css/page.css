@@ -97,7 +97,9 @@
     height: 196px;
 }
 .in-profile .in-cont li {
-  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
   font-size: .889em;
 }
 .in-profile .in-cont li:last-child {margin-bottom: 0;}
@@ -107,6 +109,18 @@
   font-family: "Kanit", sans-serif;
   font-weight: 600;
 }
+.in-profile .in-cont li > a.blog {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/page/ico_blog.png) 0 0 no-repeat;
+  font-size: 0;
+}
+.in-profile .in-cont li > a.blog:hover,
+.in-profile .in-cont li > a.blog:focus {
+  background-position: -26px 0;
+}
+
 .in-skill .in-cont ul {
   margin: 24px 26px 0;
 }
